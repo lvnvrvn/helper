@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <title>Создание вопроса</title>
+  </head>
+  <body class="create__body">
+    <header class="header">
+      <a href="index.html" class="header__item header__make">
+        <div class="header__text">Вопросы других</div>
+        <img
+          class="header__icon"
+          src="./images/header/other-question.png"
+          alt=""
+        />
+      </a>
+      <a href="myQuestions.html" class="header__item header__my">
+        <div class="header__text">Мои вопросы</div>
+        <img class="header__icon" src="./images/header/question.png" alt="" />
+      </a>
+    </header>
+    <div class="create">
+      <h2 class="create__title">Создание вопроса</h2>
+      <form class="create__form" action="">
+        <label class="create__form__label" for="create__form__input">
+          <input
+            class="create__form__input create__form__input__item"
+            id="create__form__input"
+            type="text"
+          />
+          <span class="create__form__input__text create__label__text"
+            >Введите вопрос</span
+          >
+        </label>
+        <div class="create__text__helper">Помогите выбрать</div>
+        <div class="create__options">
+          <button class="create__add__option">Добавить вариант</button>
+          <div class="create__options__row"></div>
+        </div>
+        <label class="create__input__label" for="create__input__text">
+          <textarea
+            class="create__input__text create__form__input__item"
+            id="create__input__text"
+          ></textarea>
+          <span class="create__input__label__text create__label__text"
+            >Комментарий к вопросу</span
+          >
+        </label>
+        <a class="create__btn" href="">Создать вопрос</a>
+      </form>
+    </div>
+    <footer class="footer">&copy; 2023</footer>
+
+    <script src="questions.js"></script>
+    <script src="create.js"></script>
+  </body>
+</html>

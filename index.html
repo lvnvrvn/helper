@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <title>Главная</title>
+</head>
+<body>
+    <header class="header">
+        <a href="create.html" class="header__item header__make">
+            <div class="header__text">Создать вопрос</div>
+            <img class="header__icon" src="./images/header/pen.png" alt="">
+        </a>
+        <a href="myQuestions.html" class="header__item header__my">
+            <div class="header__text">Мои вопросы</div>
+            <img class="header__icon" src="./images/header/question.png" alt="">
+        </a>
+    </header>
+    <div class="question__list">
+        <form class="question__list__form" action="">
+            <input id="question__list__search" class="question__list__search" type="text">
+            <label class="question__list__label" for="question__list__search">Поиск</label>
+
+            <div class="question__list__search__clear">&#10006;</div>
+
+            <div class="question__list__results">Результатов:2</div>
+        </form>
+        <div class="question__list__content">
+            <h2 class="question__list__title">Всякие вопросы</h2>
+            <div class="question__list__notfound">Не найдено</div>
+        </div>
+    </div>
+    <footer class="footer">
+        &copy; 2023
+    </footer>
+    <div class="modal">
+        <div class="greeting__modal">
+            <h2 class="modal__title">Привет!</h2>
+            <p class="modal__text">Это приложение поможет тебе в момент, когда ты не знаешь что надеть, куда пойти, что заказать. Мы собрали всех твоих друзей, чтобы они помогли тебе выбрать. Удачи.</p>
+            <p class="modal__text">p.s. Пока здесь нет настоящих пользователей предлагаем просто ознакомиться с тем, как должно в теории работать это приложение.</p>
+            <button class="modal__btn close">Понятно</button>
+            <div class="close__modal close">&#10006;</div>
+        </div>
+    </div>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
